@@ -23,9 +23,13 @@ public class Main {
 
         Random rand = new Random();
         int i;
+        int j;
+        int k;
         i = rand.nextInt(5);
+        j = rand.nextInt(5);
+        k = rand.nextInt(5);
 
-        System.out.println("The " + listOfAdjectives[i] + " " + listOfNouns[i] + " " + listOfVerbs[i] + ".");
+        System.out.println("The " + listOfAdjectives[i] + " " + listOfNouns[j] + " " + listOfVerbs[k] + ".");
 
 
     }
