@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -16,20 +17,24 @@ public class Main {
         // points in the story based on the word type.
     //Don’t forget to stage and commit changes in git as you go along
     //Bonus: Get the words to fill each array by asking the user to supply them.
+        //import Scanner
+        //have user enter a noun, adjective, and verb
 
+        //turning part two into comment, can revisit
         String [] listOfNouns = {"bird","dog","photograph","eyes","ocean"};
         String [] listOfAdjectives = {"beautiful","blue","funny","giant","runny"};
         String [] listOfVerbs = {"runs","jumps","flies","types","sleeps"};
 
+        /*creating new lists with 5 inputs, user will generate
+        String [] listOfNouns = new String[5];
+        String [] listOfAdjectives = new String[5];
+        String [] listOfVerbs = new String[5];
+        //import new scanner */
+        Scanner userInput = new Scanner(System.in);
         Random rand = new Random();
-        int i;
-        int j;
-        int k;
-        i = rand.nextInt(5);
-        j = rand.nextInt(5);
-        k = rand.nextInt(5);
 
-        System.out.println("The " + listOfAdjectives[i] + " " + listOfNouns[j] + " " + listOfVerbs[k] + ".");
+        System.out.println("The " + listOfAdjectives[rand.nextInt(5)] + " "
+                + listOfNouns[rand.nextInt(5)] + " " + listOfVerbs[rand.nextInt(5)] + ".");
 
 
     }
