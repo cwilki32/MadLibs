@@ -23,7 +23,7 @@ public class Main {
         //turning part two into comment, can revisit
         String [] listOfNouns = {"bird","dog","photograph","eyes","ocean"};
         String [] listOfAdjectives = {"beautiful","blue","funny","giant","runny"};
-        String [] listOfVerbs = {"runs","jumps","flies","types","sleeps"};
+        String [] listOfVerbs = {"run","jump","fly","type","sleep"};
 
         /*creating new lists with 5 inputs, user will generate
         String [] listOfNouns = new String[5];
@@ -33,8 +33,11 @@ public class Main {
         Scanner userInput = new Scanner(System.in);
         Random rand = new Random();
 
-        System.out.println("The " + listOfAdjectives[rand.nextInt(5)] + " "
-                + listOfNouns[rand.nextInt(5)] + " " + listOfVerbs[rand.nextInt(5)] + ".");
+        //create madlibs story
+        String story = "There once was a " + listOfAdjectives[rand.nextInt(5)] + " " +
+                listOfNouns[rand.nextInt(5)] + " that loved to " +listOfVerbs[rand.nextInt(5)] + ".";
+
+        System.out.println(story);
 
 
     }
