@@ -21,17 +21,33 @@ public class Main {
         //have user enter a noun, adjective, and verb
 
         //turning part two into comment, can revisit
+        /*
         String [] listOfNouns = {"bird","dog","photograph","eyes","ocean"};
         String [] listOfAdjectives = {"beautiful","blue","funny","giant","runny"};
-        String [] listOfVerbs = {"run","jump","fly","type","sleep"};
+        String [] listOfVerbs = {"run","jump","fly","type","sleep"}; */
 
-        /*creating new lists with 5 inputs, user will generate
+        //creating new lists with 5 inputs, user will generate
         String [] listOfNouns = new String[5];
         String [] listOfAdjectives = new String[5];
         String [] listOfVerbs = new String[5];
-        //import new scanner */
+        //import new scanner
         Scanner userInput = new Scanner(System.in);
         Random rand = new Random();
+        //have user build nouns
+        System.out.println("Enter 5 nouns: ");
+        for (int i = 0; i < listOfNouns.length; i++) {
+            listOfNouns[i] = userInput.next();
+        }
+        System.out.println("Enter 5 adjectives: ");
+        for (int i = 0; i < listOfAdjectives.length; i++) {
+            listOfAdjectives[i] = userInput.next();
+        }
+        System.out.println("Enter 5 verbs: ");
+        for (int i = 0; i < listOfVerbs.length; i++) {
+            listOfVerbs[i] = userInput.next();
+        }
+
+
 
         //create madlibs story
         String story = "There once was a " + listOfAdjectives[rand.nextInt(5)] + " " +
